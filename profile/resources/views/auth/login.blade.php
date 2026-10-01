@@ -30,35 +30,53 @@
             @endif
 
             <form action="{{ route('login.store') }}" method="POST">
-                @csrf
+    @csrf
 
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value="{{ old('email') }}"
-                        class="form-control"
-                        required
-                        autofocus
-                    >
-                </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">
+            Email
+        </label>
 
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        class="form-control"
-                        required
-                    >
-                </div>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            value="{{ old('email') }}"
+            required
+        >
 
-                <button type="submit" class="btn btn-primary w-100 rounded-pill">
-                    Login
-                </button>
+        @error('email')
+            <div class="text-danger mt-1">
+                {{ $message }}
+            </div>
+        @enderror
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">
+            Password
+        </label>
+
+        <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            required
+        >
+
+        @error('password')
+            <div class="text-danger mt-1">
+                {{ $message }}
+            </div>
+        @enderror
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Login
+    </button>
+
                 <br>
                 <p>
                     <b>Username:</b> test@example.com <br>
