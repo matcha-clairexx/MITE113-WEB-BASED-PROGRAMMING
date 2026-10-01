@@ -56,16 +56,26 @@
                     >
                 </div>
 
-                <div class="form-check mb-4">
-                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
-                    <label class="form-check-label" for="remember">Remember me</label>
-                </div>
-
                 <button type="submit" class="btn btn-primary w-100 rounded-pill">
                     Login
                 </button>
+                <br>
+                <p>
+                    <b>Username:</b> test@example.com <br>
+                    <b>Password:</b> password
+                    <br>
+                    <br>
+                    <b>Username:</b> second@example.com <br>
+                    <b>Password:</b> password
+                    <br>
+                    <br>
+                    <b>Username:</b> admin@example.com <br>
+                    <b>Password:</b> password
+                </p>
             </form>
         </div>
+
+
     </div>
 </div>
 </body>
