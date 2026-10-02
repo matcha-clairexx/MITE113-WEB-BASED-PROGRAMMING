@@ -77,19 +77,6 @@
         Login
     </button>
 
-                <br>
-                <p>
-                    <b>Username:</b> test@example.com <br>
-                    <b>Password:</b> password
-                    <br>
-                    <br>
-                    <b>Username:</b> second@example.com <br>
-                    <b>Password:</b> password
-                    <br>
-                    <br>
-                    <b>Username:</b> admin@example.com <br>
-                    <b>Password:</b> password
-                </p>
             </form>
         </div>
 

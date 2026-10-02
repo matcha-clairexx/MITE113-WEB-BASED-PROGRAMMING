@@ -32,7 +32,7 @@ class LoginController extends Controller
             // Prevent session fixation
             $request->session()->regenerate();
 
-            return redirect()->intended('/students');
+            return redirect()->route('dashboard');
         }
 
         return back()
